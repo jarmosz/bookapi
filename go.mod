@@ -1,4 +1,4 @@
-module github.com/elliotforbes/go-fiber-tutorial
+module github.com/jarmosz/bookapi
 
 go 1.14
 

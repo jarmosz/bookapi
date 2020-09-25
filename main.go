@@ -1,9 +1,8 @@
 package main
 
 import (
-	"book"
+	"github.com/jarmosz/books"
 
-	"github.com/elliotforbes/go-fiber-tutorial/book"
 	"github.com/gofiber/fiber"
 )
 
@@ -12,7 +11,8 @@ func helloWorld(c *fiber.Ctx) {
 }
 
 func setupRoutes(app *fiber.App) {
-	app.Get("/api/v1/book", book.GetBooks)
+	app.Get("/api/v1/book", books.GetBooks)
+	app.Get("/api/v1/book/:id", books.GetBook)
 }
 
 func main() {
